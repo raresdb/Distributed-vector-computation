@@ -24,10 +24,6 @@ Task:
     Each element has to be multiplied by 5 and then printed by process 0.
     Each worker will be assigned a part of the vector to process.
 
-Run:
-
-    For changing the parameters of the program, check the Makefile.
-
 Outputs:
 
     First the topology must be established.
@@ -35,7 +31,7 @@ Outputs:
     Also, the final vector will be printed by process 0.
     Each message sent will be marked with a message to the console with the source and destination.
 
+Run:
 
-
-
+    For changing the parameters of the program, check the Makefile.
 
