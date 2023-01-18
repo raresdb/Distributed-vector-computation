@@ -245,7 +245,7 @@ void error2(int argc, char** argv) {
 
 	// print the result
 	if(rank == 0) {
-		cout << "Rezultat:";
+		cout << "Result:";
 
 		for(auto i : v) {
 			cout<<" "<<i;
