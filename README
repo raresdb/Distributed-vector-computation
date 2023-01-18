@@ -16,6 +16,7 @@ Error_types:
     0: No error.
     1: The link between 0 and 1 is broken.
     2: 1 is completely separated from the rest of the topology.
+    Errors 0 and 1 can be treated using the same algorithm.
 
 Task:
 
