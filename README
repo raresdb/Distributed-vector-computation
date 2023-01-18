@@ -1,0 +1,36 @@
+# Butilca Rares
+
+Description:
+
+    This program runs a number of processes that colaborate on computing a vector.
+
+Topology:
+    There are 4 clusters united through their leaders with ranks 0, 1, 2 and 3.
+    These leaders are connected in a ring in the order 0, 1, 2, 3, 0.
+    Each leader is connected directly to the workers from their cluster.
+    The workers can communicate only to their leader.
+
+Error_types:
+    0: No error.
+    1: The link between 0 and 1 is broken.
+    2: 1 is completely separated from the rest of the topology.
+
+Task:
+    Process 0 will generate a vector of length N using the rule V[K] = N - K - 1.
+    This vector will be passed to the workers through the links in the topology and then processed.
+    Each element has to be multiplied by 5 and then printed by process 0.
+    Each worker will be assigned a part of the vector to process.
+
+Run:
+    For changing the parameters of the program, check the Makefile.
+
+Outputs:
+    First the topology must be established.
+    Thus the processes will learn about the topology and print the clusters that they can reach.
+    Also, the final vector will be printed by process 0.
+    Each message sent will be marked with a message to the console with the source and destination.
+
+
+
+
+
